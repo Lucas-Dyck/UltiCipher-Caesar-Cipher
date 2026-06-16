@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Caesar Cipher</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <p>UltiCipher</p>
+            <button id=encrypt class="mode_pressed">Encrypt Mode</button>
+            <button id=decrypt>Decrypt Mode</button>
+        </header>
+
+        <div id="display" style="margin-top: 50px;">
+            <p>Shift</p>
+            <div id="shift">
+                <button id="up">⬆</button>                
+                <p id="shift_display">0</p>
+                <button id="down">⬇︎</button>
+            </div>
+            
+            <div>
+                <textarea id=input placeholder='Text to encrypt' rows='15' cols='60'></textarea>
+            </div>
+
+            <div>
+                <button id="run_code">Encrypt</button>
+            </div>
+        </div>    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
